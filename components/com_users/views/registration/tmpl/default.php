@@ -27,6 +27,7 @@ JHtml::_('behavior.formvalidator');
 	<?php if ($this->params->get('show_page_heading')) : ?>
 		<div class="page-header">
 			<h1><?php echo $this->escape($this->params->get('page_heading')); ?></h1>
+            <p class="sub-heading"><?php echo JText::_("REGISTERATION_PAGE_SUB_HEADING"); ?></p>
 		</div>
 	<?php endif; ?>
 	<form id="member-registration" action="<?php echo JRoute::_('index.php?option=com_users&task=registration.register'); ?>" method="post" class="form-validate form-horizontal well" enctype="multipart/form-data">
@@ -39,6 +40,7 @@ JHtml::_('behavior.formvalidator');
 					<?php if (isset($fieldset->label)) : ?>
 						<legend><?php echo JText::_($fieldset->label); ?></legend>
 					<?php endif; ?>
+                    <p class="sub-legend"><?php echo JText::_("REGISTERATION_PAGE_SUB_LEGEND"); ?></p>
 					<?php echo $this->form->renderFieldset($fieldset->name); ?>
 				</fieldset>
 			<?php endif; ?>
@@ -48,9 +50,9 @@ JHtml::_('behavior.formvalidator');
 				<button type="submit" class="btn btn-primary validate">
 					<?php echo JText::_('JREGISTER'); ?>
 				</button>
-				<a class="btn" href="<?php echo JRoute::_(''); ?>" title="<?php echo JText::_('JCANCEL'); ?>">
+				<!--<a class="btn" href="<?php echo JRoute::_(''); ?>" title="<?php echo JText::_('JCANCEL'); ?>">
 					<?php echo JText::_('JCANCEL'); ?>
-				</a>
+				</a>-->
 				<input type="hidden" name="option" value="com_users" />
 				<input type="hidden" name="task" value="registration.register" />
 			</div>

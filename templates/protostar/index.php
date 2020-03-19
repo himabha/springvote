@@ -202,9 +202,9 @@ else
 					<!-- End Sidebar -->
                     <?php endif; ?>
 				<?php if ($customHomepage): ?>
-                    <div id="sidebar" class="span6 customsidebar">
+                    <div id="sidebar" class="customsidebar">
                         <div class="sidebar-nav span9">
-                            <div class="homelogo span6">
+                            <div class="homelogo span5">
                                 <?php echo $logo; ?>
                             </div>
                             <jdoc:include type="modules" name="homesidebar" style="xhtml" />
@@ -213,7 +213,7 @@ else
                     <!-- End Sidebar -->
                 <?php endif; ?>
 
-				<main id="content" role="main" class="<?php echo ($customHomepage) ? 'span6 customcontent': $span ?>">
+				<main id="content" role="main" class="<?php echo ($customHomepage) ? 'customcontent': $span ?>">
 					<!-- Begin Content -->
 					<jdoc:include type="modules" name="position-3" style="xhtml" />
 					<jdoc:include type="message" />

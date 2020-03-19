@@ -7770,6 +7770,7 @@ ul.manager .height-50 .icon-folder-2 {
     position:relative;
     background-color: #252E71;
     color: #fff;
+    width: 50%;
 }
 form .userdata{
     display: flex;
@@ -7777,8 +7778,12 @@ form .userdata{
 div#form-login-username a, div#form-login-password a{
     color: #252E71;
 }
+.customcontent{
+    width: 50%;
+    margin: 0;
+}
 .customcontent #login-form {
-    margin: 3% 0% 0 8%;
+    margin: 3% 0% 9px 8%;
 }
 .customcontent #login-form button[type='submit']{
     width: 60%;
@@ -7796,7 +7801,7 @@ div#form-login-username input, div#form-login-password input{
     background-color: #252E71;
 }
 .custom-homepageinfo {
-    margin: 10% 0;
+    margin: 10% 0 !important;
 }
 html, body {
   height: 100%;
@@ -7806,7 +7811,9 @@ html, body {
     height: 92%;
 }
 .custom-home footer{
+    position: relative;
     height: 8%;
+    box-shadow: 0px 0px 8px 0px #ccc;
 }
 .customsidebar .sidebar-nav{
     position: absolute;
@@ -7829,7 +7836,7 @@ html, body {
 .custom-footer{
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .footer-left, .footer-right{
     text-align: center;
@@ -7837,6 +7844,9 @@ html, body {
 }
 .footer-left a{
     color: #252E71;
+}
+.footer-right .nav {
+    margin-bottom: 0 !important
 }
 .footer-right .nav a {
     color: #555555de;
@@ -7846,25 +7856,85 @@ html, body {
     margin: 0 10px;
 }
 .customcontent #member-registration {
-    background: none;
+    position: absolute;
+    left: 30%;
+    background: #fff;
+    width: 35%;
+    border-radius: 0;
+    box-shadow: 0px 0px 6px 0px #ccc;
 }
 .custom-registeration .control-label{
+    width: 100%;
+}
+.custom-registeration .control-label label{
     text-align: left;
     width: 100%;
+    padding-left: 10px;
+    color: #6b6565;
+    text-transform: uppercase;
+}
+
+input[id="jform_accept"]{
+    float: left;
+    margin: -22px 8px 0 8px;
+}
+label[for='jform_accept']{
+    text-transform: unset !important;
+    padding: 0px;
+    margin-left: 15px;
+    font-size: 10px;
 }
 .custom-registeration .controls{
     margin-left: 0;
+    text-align: center;
 }
 .custom-registeration legend{
     color: #372473;
     border: none;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 0;
+    width: 80%;
+    padding-left: 10px;
+}
+
+.custom-registeration .sub-legend{
+    color: #999;
+    margin: 5px 0;
+    padding-left: 10px;
 }
 .custom-registeration .page-header{
     border: none;
     color: #372473;
-    font-size:36px;
+    font-size: 38px;
+    padding-top: 2%;
+    text-align: center;
 }
-
-.custom-registeration #member-registration{
-    width: 45%;
+.custom-registeration .page-header h1{
+    font-size: 36px;
+}
+.custom-registeration .page-header .sub-heading{
+    font-size: 15px;
+    color: #ff0000c2;
+    margin-bottom: 0;
+}
+.custom-registeration .control-group{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.custom-registeration{
+    position: relative;
+    height: 88%;
+    background: #fff;
+}
+.custom-registeration .controls input:not([type='checkbox']){
+    width: 90%;
+    border-radius: 0;
+    height: 18px;
+}
+.registration .validate{
+    width: 95%;
+    border-radius: 0;
+    padding: 7px;
+    text-transform: uppercase;
 }

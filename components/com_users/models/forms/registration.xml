@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
 	<fieldset name="default" label="COM_USERS_REGISTRATION_DEFAULT_LABEL">
-		<field
+		<!--<field
 			name="spacer"
 			type="spacer"
 			label="COM_USERS_REGISTER_REQUIRED"
@@ -16,7 +16,7 @@
 			filter="string"
 			required="true"
 			size="30"
-		/>
+		/>-->
 
 		<field
 			name="username"
@@ -87,6 +87,16 @@
 			size="30"
 			validate="equals"
 		/>
+        <field
+			name="accept"
+			type="checkbox"
+			label="COM_USERS_REGISTER_ACCEPT_LABEL"
+			description="COM_USERS_REGISTER_ACCEPT_DESC"
+			filter="string"
+			required="true"
+			size="30"
+		/>
+
 
 		<field
 			name="captcha"
