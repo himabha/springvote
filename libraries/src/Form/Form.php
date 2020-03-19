@@ -404,8 +404,6 @@ class Form
 		{
 			// Get an array of <fieldset /> elements and fieldset attributes.
 			$sets = $this->xml->xpath('//fieldset[@name and not(ancestor::field/form/*)] | //field[@fieldset and not(ancestor::field/form/*)]/@fieldset');
-            echo "<pre>";
-            print_r($sets);
 		}
 
 		// If no fieldsets are found return empty.
