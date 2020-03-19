@@ -174,12 +174,12 @@ class User extends Table
 		$filterInput = \JFilterInput::getInstance();
 
 		// Validate user information
-		if ($filterInput->clean($this->name, 'TRIM') == '')
+		/*if ($filterInput->clean($this->name, 'TRIM') == '')
 		{
 			$this->setError(\JText::_('JLIB_DATABASE_ERROR_PLEASE_ENTER_YOUR_NAME'));
 
 			return false;
-		}
+		}*/
 
 		if ($filterInput->clean($this->username, 'TRIM') == '')
 		{
