@@ -7768,7 +7768,7 @@ ul.manager .height-50 .icon-folder-2 {
 }
 .customsidebar{
     position:relative;
-    background-color: #252E71;
+    background-color: #002868;
     color: #fff;
     width: 50%;
 }
@@ -7776,7 +7776,7 @@ form .userdata{
     display: flex;
 }
 div#form-login-username a, div#form-login-password a{
-    color: #252E71;
+    color: #002868;
 }
 .customcontent{
     width: 50%;
@@ -7798,7 +7798,7 @@ div#form-login-username input, div#form-login-password input{
     height: 100%;
 }
 .userdata .login-button, .registration .validate{
-    background-color: #252E71;
+    background-color: #002868;
 }
 .custom-homepageinfo {
     margin: 10% 0 !important;
@@ -7821,7 +7821,7 @@ html, body {
     top: 15%;
 }
 .learn_more {
-    background: #1A255A;
+    background: #002868;
     color: #fff;
     border-radius: 0;
 }
@@ -7843,7 +7843,7 @@ html, body {
     width: 50%;
 }
 .footer-left a{
-    color: #252E71;
+    color: #002868;
 }
 .footer-right .nav {
     margin-bottom: 0 !important
@@ -7889,7 +7889,7 @@ label[for='jform_accept']{
     text-align: center;
 }
 .custom-registeration legend{
-    color: #372473;
+    color: #002868;
     border: none;
     font-size: 20px;
     line-height: 25px;
@@ -7905,7 +7905,7 @@ label[for='jform_accept']{
 }
 .custom-registeration .page-header{
     border: none;
-    color: #372473;
+    color: #002868;
     font-size: 38px;
     padding-top: 2%;
     text-align: center;
@@ -7937,4 +7937,63 @@ label[for='jform_accept']{
     border-radius: 0;
     padding: 7px;
     text-transform: uppercase;
+}
+
+.custom-homemobilelogo{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .customcontent, .customsidebar{
+        width: 100%;
+    }
+    .custom-home .row-fluid{
+        display: none;
+    }
+    form .userdata{
+        display: block;
+    }
+    .customcontent #member-registration{
+        width: auto;
+        position: absolute;
+        left: 0;
+    }
+    .custom-registeration .page-header h1{
+        font-size: 30px;
+    }
+    .customcontent #login-form button[type='submit']{
+        width: 100%;
+        padding: 7px;
+    }
+    .customcontent #login-form{
+        margin: 3% 0% 9px 2%;
+    }
+    .customcontent .input-prepend{
+        display: block;
+    }
+    div#form-login-username input, div#form-login-password input{
+        width: 95%;
+    }
+    .customsidebar .sidebar-nav{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .custom-homepageinfo{
+        display: none !important;
+    }
+    .customsidebar .homelogo{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 0;
+        justify-content: center;
+    }
+    footer{
+        display: none;
+    }
+    .custom-homemobilelogo{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
 }

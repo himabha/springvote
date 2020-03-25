@@ -71,4 +71,13 @@ jQuery(function($) {
 			$label.addClass('active btn-' + btnClass);
 		});
 	}
+
+    if ($(window).width() < 768) {
+        setTimeout(function(){
+            $(".custom-homemobilelogo").fadeOut();
+            $(".custom-home .row-fluid").delay(500).fadeIn();
+        }, 1000);
+    }
+
+
 });
